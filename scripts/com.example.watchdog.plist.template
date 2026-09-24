@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  launchd job that runs the health watchdog every morning.
+
+  Install:
+    1. Replace __HOME__ with your home dir and __PREFIX__ with the label
+       prefix of the jobs you want watched (e.g. com.example.).
+    2. Keep the Label below equal to this file's stem (com.example.watchdog),
+       or the watchdog's own Label-mismatch check will (correctly) flag it.
+    3. cp this to ~/Library/LaunchAgents/com.example.watchdog.plist
+    4. launchctl load ~/Library/LaunchAgents/com.example.watchdog.plist
+
+  Do NOT put StandardOut/ErrorPath or WorkingDirectory under ~/Desktop,
+  ~/Documents, or ~/Downloads — macOS TCC can kill the job before it starts.
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.example.watchdog</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/python3</string>
+        <string>__HOME__/path/to/launchd-watchdog.py</string>
+        <string>--prefix</string>
+        <string>__PREFIX__</string>
+    </array>
+
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>8</integer>
+        <key>Minute</key>
+        <integer>40</integer>
+    </dict>
+
+    <key>RunAtLoad</key>
+    <false/>
+
+    <key>StandardOutPath</key>
+    <string>__HOME__/Library/Logs/com.example.watchdog.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>__HOME__/Library/Logs/com.example.watchdog.err.log</string>
+</dict>
+</plist>
