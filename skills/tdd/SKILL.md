@@ -46,4 +46,4 @@ seams nobody agreed to.
 When fixing a bug, `systematic-debugging` Phase 4 calls this skill: failing
 reproduction test first, then the fix.
 
-<!-- Derived from the tdd skill in mattpocock/skills (MIT), condensed and adjusted. -->
+<!-- Derived from the tdd skill in mattpocock/skills (MIT, Copyright (c) 2026 Matt Pocock), condensed and adjusted. See THIRD_PARTY_NOTICES.md. -->

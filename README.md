@@ -122,4 +122,4 @@ that stopped, the number nobody double-checked, the code nobody reads anymore.
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT — see [LICENSE](LICENSE). Three skills (`grilling`, `tdd`, `systematic-debugging`) are derived from MIT-licensed work by Matt Pocock and Jesse Vincent — see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

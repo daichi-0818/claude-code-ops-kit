@@ -44,3 +44,5 @@ Use this discipline *most* under pressure (panic invites guessing; systematic is
 
 ## If the investigation concludes "no root cause"
 If it truly is environmental or timing-related: record the investigation, add proper handling (retry/timeout), and add monitoring/logging for the future. **But 95% of "no root cause" is insufficient investigation.**
+
+<!-- Derived from the systematic-debugging skill in obra/superpowers (MIT, Copyright (c) 2025 Jesse Vincent), condensed and adjusted. See THIRD_PARTY_NOTICES.md. -->

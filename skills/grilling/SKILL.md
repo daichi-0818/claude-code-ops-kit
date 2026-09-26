@@ -15,3 +15,5 @@ Before you start building, interview the requester about every side of the plan 
 
 ## Why this works
 Rework from "discovered a requirements mismatch after building" always costs more than the five questions up front. This is the **entry-side gate**, paired with the self-audit skill (the exit-side guess check).
+
+<!-- Derived from the grilling skill in mattpocock/skills (MIT, Copyright (c) 2026 Matt Pocock), condensed and adjusted. See THIRD_PARTY_NOTICES.md. -->

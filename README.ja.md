@@ -79,4 +79,4 @@ launchdでのwatchdog定期実行を含む詳細手順は [`docs/install.md`](do
 
 ## ライセンス
 
-MIT — [LICENSE](LICENSE) 参照。
+MIT — [LICENSE](LICENSE) 参照。skill のうち `grilling`・`tdd`・`systematic-debugging` は Matt Pocock 氏・Jesse Vincent 氏の MIT ライセンスの skill を元に調整したもの — [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) 参照。
